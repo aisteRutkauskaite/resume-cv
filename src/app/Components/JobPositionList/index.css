@@ -1,0 +1,10 @@
+.work_name {
+  font-weight: bold;
+}
+
+.work_info {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}

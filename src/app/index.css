@@ -65,59 +65,11 @@
   left: 35px;
 }
 
-/* .logo {
-  width: 30px;
-  height: 30px;
-  filter: grayscale(100%);
-  margin-right: 12px;
-}
-.logo:hover {
-  filter: none;
-} */
-
-/* .links {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 288px;
-  height: 205px;
-} */
-
-/* .social_item {
-  margin: 25px 0;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-  display: flex;
-  margin: 60px 0;
-}
-
-.logo_text {
-  width: 159px;
-  height: 19px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 19px;
-  padding: 0;
-  margin: 0;
-} */
-
-.container_1 {
+.info_container {
   display: grid;
   grid-template-columns: 1fr 2fr;
   column-gap: 75px;
 }
-
-/* .About_me {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 100vw;
-  height: 194px;
-} */
 
 .about_me_text {
   font-weight: 500;
@@ -127,24 +79,12 @@ a {
   width: 615px;
 }
 
-.container_2 {
+.skills_container {
   margin-top: 80px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 75px;
 }
-
-/* .education {
-  display: flex;
-  flex-direction: column;
-} */
-
-/* .school {
-  display: flex;
-  flex-direction: column;
-  margin: 17px 0;
-  text-align: left;
-} */
 
 .break {
   width: 201px;
@@ -152,77 +92,40 @@ a {
   background: #dcdcdc;
 }
 
-.container_3 {
+.work_expierence_container {
   margin-top: 80px;
   text-align: left;
 }
 
 .work_expierence {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
-.job_position {
-  display: flex;
-  /* flex-direction: column; */
-  margin: 20px;
-  justify-content: space-between;
+.work_expierence .work_position:last-child {
+  padding-left: 20px;
+  border-left: 2px solid #dcdcdc;
 }
 
-.responsibilities {
+.work_expierence .work_position:first-child {
+  padding-right: 20px;
+  border-right: 2px solid #dcdcdc;
+}
+
+.work_position {
   text-align: left;
-  margin: 0;
-}
-
-.position_name {
-  font-weight: bold;
-}
-
-.job_info {
-  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  margin: 20px;
 }
 
-.rectangle_7 {
-  width: 2px;
-  height: 100%;
-  background: #dcdcdc;
-  margin-left: 20px;
+.contact_container {
+  margin-top: 200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 75px;
 }
 
-.job_position_text {
-  display: flex;
-  flex-direction: column;
-  /* margin-right:  20px; */
-}
-
-.container_4 {
-  margin-top: 150px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.rectangle_8 {
-  position: relative;
-  width: 248px;
-  height: 28px;
-  background-color: black;
-  text-align: center;
-}
-
-.contact_title {
-  height: 30px;
-  font-style: normal;
-  font-weight: bold;
-  color: white;
-  font-size: 24px;
-  line-height: 28px;
-  margin-top: 0;
-}
-
-.contact_text_container {
-  display: flex;
-  flex-direction: column;
+li {
+  list-style: none;
 }

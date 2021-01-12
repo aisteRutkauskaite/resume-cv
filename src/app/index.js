@@ -1,12 +1,12 @@
 import "./index.css";
-import logoLinkedIn from "../linkedin-512.png";
-import logoTwitter from "../twitter_circle-512.png";
-import logoGitHub from "../Logo_Github-512.png";
 import Pill from "./Components/Pill";
 import ContentBox from "./Components/ContentBox";
 import Select from "./Components/Select/select.js";
 import Link from "./Components/Link";
-import ListEducation from "./Components/List";
+import ListEducation from "./Components/ListEducation";
+import List from "./Components/List";
+import JobPosition from "./Components/JobPositionList";
+import Contacts from "./Components/Contacts";
 
 function App() {
   return (
@@ -28,7 +28,7 @@ function App() {
         </div>
       </header>
       <main>
-        <section className="container_1">
+        <section className="info_container">
           <ContentBox title="LINKS">
             <Link
               link="https://www.linkedin.com/in/aist%C4%97-rutkauskait%C4%97-8953b8112/"
@@ -62,7 +62,7 @@ function App() {
             </p>
           </ContentBox>
         </section>
-        <section className="container_2">
+        <section className="skills_container">
           <ContentBox title="EDUCATION">
             <div className="education">
               <ListEducation
@@ -90,92 +90,116 @@ function App() {
             <Pill color="red">PHP</Pill>
           </ContentBox>
         </section>
-        <section className="container_3">
+        <section className="work_expierence_container">
           <ContentBox title="WORK EXPIERENCE">
             <div className="work_expierence">
-              <div className="job_position">
-                <div className="job_position_text">
-                  <div className="job_info">
-                    <span className="position_name">Furniture designer</span>
-                    <span>„Vildika“</span>
-                    <span>2017-2020</span>
-                  </div>
-                  <p className="responsibilities">
-                    *Design furnitures and space layout for offices.<br></br>
-                    *Make drawings and visualizations.<br></br>
-                    *Measure the premises.<br></br>
-                    *Combine materials.<br></br>
-                    *Work in team with constructors and project managers.
-                  </p>
-                </div>
-                <div className="rectangle_7"></div>
+              <div className="work_position">
+                <JobPosition
+                  jobPosition="Furniture designer"
+                  companyName="„Vildika“"
+                  years="2017-2020"
+                ></JobPosition>
+                <List
+                  li={[
+                    {
+                      children:
+                        "Design furnitures and space layout for offices.",
+                    },
+                    {
+                      children:
+                        "Make drawings and visualizations. *Measure the premises.",
+                    },
+                    { children: "Combine materials." },
+                    {
+                      children:
+                        "Work in team with constructors and project managers.",
+                    },
+                  ]}
+                ></List>
               </div>
-              <div className="job_position">
-                <div className="job_position_text">
-                  <div className="job_info">
-                    <span className="position_name">
-                      Vizual information designer
-                    </span>
-                    <span>„Kesko Senukai Lithuania“ </span>
-                    <span>2016-2017</span>
-                  </div>
-                  <p className="responsibilities">
-                    *Supervise exposition of shopping center. <br></br>
-                    *Make layouts and prints.<br></br>
-                    *Work with marketing team.<br></br>
-                  </p>
-                </div>
-                <div className="rectangle_7"></div>
+              <div className="work_position">
+                <JobPosition
+                  jobPosition="Vizual information designer"
+                  companyName="„Kesko Senukai Lithuania“"
+                  years="2016-2017"
+                ></JobPosition>
+
+                <List
+                  li={[
+                    {
+                      children: "Supervise exposition of shopping center.",
+                    },
+                    {
+                      children: "Make layouts and prints.",
+                    },
+                    { children: "Combine materials." },
+                    {
+                      children: "Work with marketing team.",
+                    },
+                  ]}
+                ></List>
               </div>
-              <div className="job_position">
-                <div className="job_position_text">
-                  <div className="job_info">
-                    <span className="position_name">
-                      Vizual information designer
-                    </span>
-                    <span>„Kesko Senukai Lithuania“ </span>
-                    <span>2016-2017</span>
-                  </div>
-                  <p className="responsibilities">
-                    *Supervise exposition of shopping center. <br></br>
-                    *Make layouts and prints.<br></br>
-                    *Work with marketing team.<br></br>
-                  </p>
-                </div>
+              <div className="work_position">
+                <JobPosition
+                  jobPosition="Vizual information designer"
+                  companyName="„Kesko Senukai Lithuania“"
+                  years="2016-2017"
+                ></JobPosition>
+                <List
+                  li={[
+                    {
+                      children: "Supervise exposition of shopping center.",
+                    },
+                    {
+                      children: "Make layouts and prints.",
+                    },
+                    { children: "Combine materials." },
+                    {
+                      children: "Work with marketing team.",
+                    },
+                  ]}
+                ></List>
               </div>
             </div>
+
             <div className="rectangle_5"></div>
           </ContentBox>
         </section>
-        <section className="container_4">
-          <div className="conatact_block">
-            <div className="rectangle_8">
-              <h1 className="contact_title">ADDRESS</h1>
-              <div className="contact_text_container">
-                <span>Kareivių str. 18</span>
-                <span>Vilnius, Lithuania</span>
-              </div>
-            </div>
-          </div>
-          <div className="conatact_block">
-            <div className="rectangle_8">
-              <h1 className="contact_title">CONTACT</h1>
-              <div className="contact_text_container">
-                <span>+37063813676</span>
-                <span>aiste.rutkauskaite.info@gmail.com</span>
-              </div>
-            </div>
-          </div>
-          <div className="conatact_block">
-            <div className="rectangle_8">
-              <h1 className="contact_title">SOCIAL</h1>
-              <div className="contact_text_container">
-                <span>linkedin.com/in/aistė-rutkauskaitė-8953b8112</span>
-              </div>
-            </div>
-          </div>
-        </section>
       </main>
+      <footer className="contact_container">
+        <Contacts title="ADDRESS">
+          <List
+            li={[{ children: "Kareivių str. 18" }, { children: "Vilnius" }]}
+          />
+        </Contacts>
+        <Contacts title="CONTACT">
+          <List
+            li={[
+              { children: <a href="tel:+37063813676">+370 (6)3813676</a> },
+              {
+                children: (
+                  <a href="mailto:aiste.rutkauskaite.info@gmail.com">
+                    aiste.rutkauskaite.info@gmail.com
+                  </a>
+                ),
+              },
+            ]}
+          />
+        </Contacts>
+        <Contacts title="SOCIAL">
+          <List
+            li={[
+              {
+                children: (
+                  <a href="https://www.linkedin.com/in/aist%C4%97-rutkauskait%C4%97-8953b8112/">
+                    linkedin.com/in/aistė-rutkauskaitė-8953b8112
+                  </a>
+                ),
+              },
+            ]}
+          />
+        </Contacts>
+      </footer>
     </div>
   );
 }

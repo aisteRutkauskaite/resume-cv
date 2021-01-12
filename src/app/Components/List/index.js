@@ -1,13 +1,13 @@
 import "./index.css";
 
-function ListEducation({ school, years, degree }) {
+function List({ li = [] }) {
   return (
-    <div className="school">
-      <span>{school}</span>
-      <span>{years}</span>
-      <span>{degree}</span>
-    </div>
+    <ul>
+      {li.map((liData, index) => (
+        <li key={index} {...liData} />
+      ))}
+    </ul>
   );
 }
 
-export default ListEducation;
+export default List;
