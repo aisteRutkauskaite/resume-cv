@@ -2,8 +2,8 @@ import "./index.css";
 
 function Divider() {
   return (
-    <div className="rectangle_5">
-      <div className="rectangle_6"></div>
+    <div className="line_grey">
+      <div className="line_green"></div>
     </div>
   );
 }

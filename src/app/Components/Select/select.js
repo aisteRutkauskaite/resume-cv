@@ -4,7 +4,7 @@ function Select({ options = [] }) {
   return (
     <select className="option">
       {options.map((optionData) => (
-        <option {...optionData} />
+        <option key={optionData.value} {...optionData} />
       ))}
     </select>
   );

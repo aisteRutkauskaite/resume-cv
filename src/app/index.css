@@ -14,16 +14,7 @@
   padding-bottom: 200px;
 }
 
-/*@keyframes App-logo-spin {*/
-/*  from {*/
-/*    transform: rotate(0deg);*/
-/*  }*/
-/*  to {*/
-/*    transform: rotate(360deg);*/
-/*  }*/
-/*}*/
-
-.rectangle_4 {
+.rectangle_1 {
   width: 1006px;
   height: 61px;
   background: #7abcac;
@@ -32,11 +23,6 @@
   justify-content: flex-end;
   align-items: center;
 }
-
-/* .option {
-  margin-right: 10px;
-  height: 20px;
-} */
 
 .rectangle_2 {
   margin-top: 36px;
@@ -79,7 +65,7 @@
   left: 35px;
 }
 
-.logo {
+/* .logo {
   width: 30px;
   height: 30px;
   filter: grayscale(100%);
@@ -87,35 +73,25 @@
 }
 .logo:hover {
   filter: none;
-}
-
-/* .rectangle_5 {
-  position: relative;
-  width: 100%;
-  height: 4px;
-  background: #dcdcdc;
-  z-index: 100;
-}
-
-.rectangle_6 {
-  position: absolute;
-  width: 72px;
-  height: 10px;
-  background: #7abcac;
-  top: -2px;
 } */
 
-.links {
+/* .links {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   width: 288px;
   height: 205px;
+} */
+
+/* .social_item {
+  margin: 25px 0;
 }
 
-.social_item {
+a {
+  text-decoration: none;
+  color: black;
   display: flex;
-  margin: 12px 0;
+  margin: 60px 0;
 }
 
 .logo_text {
@@ -127,7 +103,7 @@
   line-height: 19px;
   padding: 0;
   margin: 0;
-}
+} */
 
 .container_1 {
   display: grid;
@@ -135,13 +111,13 @@
   column-gap: 75px;
 }
 
-.About_me {
+/* .About_me {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   width: 100vw;
   height: 194px;
-}
+} */
 
 .about_me_text {
   font-weight: 500;
@@ -152,31 +128,23 @@
 }
 
 .container_2 {
+  margin-top: 80px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 75px;
 }
 
-/* .skills {
-  width: 288px;
-  height: 229px;
-  margin-top: 50px;
+/* .education {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
 } */
 
-.education {
-  display: flex;
-  flex-direction: column;
-}
-
-.school {
+/* .school {
   display: flex;
   flex-direction: column;
   margin: 17px 0;
   text-align: left;
-}
+} */
 
 .break {
   width: 201px;
@@ -184,41 +152,12 @@
   background: #dcdcdc;
 }
 
-/* .personal_skills {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  margin: 17px 0;
-} */
-
-/* .yellow {
-  background-color: rgb(255, 255, 153);
-}
-
-.green {
-  background-color: darkseagreen;
-}
-
-.red {
-  background-color: indianred;
-}
-
-.personal_skill {
-  border-radius: 10px;
-  margin: 10px 0;
-  padding: 5px;
-  text-align: center;
-} */
-
 .container_3 {
-  margin-top: 100px;
+  margin-top: 80px;
   text-align: left;
 }
 
 .work_expierence {
-  /* display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 25px; */
   display: flex;
   justify-content: space-between;
 }

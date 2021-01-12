@@ -3,10 +3,10 @@ import Divider from "../Divider/index.js";
 
 function ContentBox({ children, title }) {
   return (
-    <div className="skills">
+    <div className="content_box">
       <h3>{title}</h3>
       <Divider />
-      <div className="personal_skills">{children}</div>
+      <div className="content">{children}</div>
     </div>
   );
 }
