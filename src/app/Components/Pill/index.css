@@ -1,0 +1,22 @@
+.yellow {
+  background-color: rgb(255, 255, 153);
+}
+
+.green {
+  background-color: darkseagreen;
+}
+
+.red {
+  background-color: indianred;
+}
+
+.grey {
+  background-color: grey;
+}
+
+.personal_skill {
+  border-radius: 10px;
+  margin: 10px 0;
+  padding: 5px;
+  text-align: center;
+}
