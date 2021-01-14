@@ -5,8 +5,8 @@ function Contacts({ title, children }) {
     <div className="contact_block">
       <div className="contact_rectangle">
         <h1 className="contact_title">{title}</h1>
-        <div className="contact_text_container">{children}</div>
       </div>
+      <div className="contact_text_container">{children}</div>
     </div>
   );
 }

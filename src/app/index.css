@@ -46,7 +46,7 @@
 
 .rectangle_3 {
   position: relative;
-  width: 248px;
+  width: 300px;
   height: 28px;
   background-color: black;
   text-align: center;
@@ -54,13 +54,12 @@
 
 .specialty {
   position: absolute;
-  width: 170px;
   height: 26px;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 28px;
-  color: #ffffff;
+  color: white;
   top: -24px;
   left: 35px;
 }
@@ -110,13 +109,6 @@
 .work_expierence .work_position:first-child {
   padding-right: 20px;
   border-right: 2px solid #dcdcdc;
-}
-
-.work_position {
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  margin: 20px;
 }
 
 .contact_container {

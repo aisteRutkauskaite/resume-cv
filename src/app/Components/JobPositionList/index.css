@@ -8,3 +8,15 @@
   flex-direction: column;
   text-align: center;
 }
+
+.work_position {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.work_responsibilities_list {
+  display: flex;
+  flex-direction: column;
+}
