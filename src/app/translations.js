@@ -155,5 +155,155 @@ export default {
       ],
     },
   },
-  lt: {},
+  lt: {
+    specialty: {
+      title: "Front-end programuotoja",
+    },
+    myLinks: {
+      title: "NUORODOS",
+      links: [
+        {
+          text: "linkedin.com/in/aistė-rutkauskaitė-8953b8112",
+          link:
+            "https://www.linkedin.com/in/aist%C4%97-rutkauskait%C4%97-8953b8112/",
+          image:
+            "https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-linkedin-circle-512.png",
+        },
+        {
+          text: "twitter.com/in/aistė-rutkauskaitė-8953b8112",
+          link:
+            "https://www.linkedin.com/in/aist%C4%97-rutkauskait%C4%97-8953b8112/",
+          image:
+            "https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png",
+        },
+        {
+          text: "github.com/aisteRutkauskaite",
+          link: "https://github.com/aisteRutkauskaite",
+          image:
+            "https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Github-512.png",
+        },
+      ],
+    },
+    aboutMe: {
+      title: "APIE MANE",
+      text:
+        "Aš esu atsakinga ir motyvuota dizainerė siekianti pakeisti savo karjeros kryptį į žiniatinklio programavimą. Prieš tai dirbau interjero dizaino srityje. Man patinka kūrybinis ir techniškas darbas, tačiau nemačiau perspektyvos būtent šiame karjeros kelyje. Mane visą laiką domino inovacijos, mokymasis ir tobulėjimas, todėl nusprendžiau pakreipti savo karjerą kita linkme, į dinamiškesnę ir globalesnę sritį.",
+    },
+    education: {
+      title: "IŠSILAVINIMAS",
+      schools: [
+        {
+          school: "Code academy",
+          years: "2020 Liepa - 2021 Kovas",
+          degree: "Full-Stack developer kursas",
+        },
+        {
+          school: "Vilniaus dailės akademija",
+          years: "2012 – 2016",
+          degree: "Interjero dizaino bakalauras",
+        },
+      ],
+    },
+    personallSkills: {
+      title: "ASMENINES SAVYBES",
+      skills: [
+        {
+          text: "Komandinis darbas",
+          level: "green",
+        },
+        {
+          text: "Komunikacija",
+          level: "yellow",
+        },
+        {
+          text: "Organizuotumas",
+          level: "yellow",
+        },
+      ],
+    },
+    technicallSkills: {
+      title: "KOMPIUTERINIAI ĮGŪDŽIAI",
+      skills: [
+        {
+          text: "HTML",
+          level: "green",
+        },
+        {
+          text: "CSS",
+          level: "yellow",
+        },
+        {
+          text: "Javascript",
+          level: "yellow",
+        },
+        {
+          text: "PHP",
+          level: "yellow",
+        },
+      ],
+    },
+    workExpierence: {
+      title: "DARBO PATIRTIS",
+      expierence: [
+        {
+          position: "Projektuotoja/ dizainerė",
+          companyName: "Vildika",
+          workYears: "2017-2020",
+          list: [
+            ["*Projektuoti baldus ir išplanavimus ofisams."],
+            ["*Daryti brėžinius ir vizualizacijas."],
+            ["*Parinkti medžiagas."],
+            ["*Dirbti komandoje su projektų vadovais ir konstruktoriais."],
+            ["*Matuoti patalpas."],
+          ],
+        },
+        {
+          position: "Vizualines informacijos dizainerė",
+          companyName: "„Kesko Senukai Lithuania“",
+          workYears: "2016-2017",
+          list: [
+            ["Prižiūrėti ir atnaujinti prekybos centro ekspoziciją."],
+            ["*Maketuoti spauda."],
+            ["*Bendradarbiauti su marketingo komanda.."],
+          ],
+        },
+        {
+          position: "Vizualines informacijos dizainerė",
+          companyName: "„Kesko Senukai Lithuania“",
+          workYears: "2016-2017",
+          list: [
+            ["Prižiūrėti ir atnaujinti prekybos centro ekspoziciją."],
+            ["*Maketuoti spauda."],
+            ["*Bendradarbiauti su marketingo komanda.."],
+          ],
+        },
+      ],
+    },
+    contacts: {
+      info: [
+        { title: "ADRESAS", list: [["Kareivių g. 18"], ["Vilnius"]] },
+        {
+          title: "KONTAKTAI",
+          list: [
+            [<a href="tel:+37063813676">+370 (6)3813676</a>],
+            [
+              <a href="mailto:aiste.rutkauskaite.info@gmail.com">
+                aiste.rutkauskaite.info@gmail.com
+              </a>,
+            ],
+          ],
+        },
+        {
+          title: "SOCIALINIAI TINKLAI",
+          list: [
+            [
+              <a href="https://www.linkedin.com/in/aist%C4%97-rutkauskait%C4%97-8953b8112/">
+                linkedin.com/in/aistė-rutkauskaitė-8953b8112
+              </a>,
+            ],
+          ],
+        },
+      ],
+    },
+  },
 };

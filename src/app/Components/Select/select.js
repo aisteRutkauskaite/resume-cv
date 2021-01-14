@@ -1,8 +1,13 @@
 import "./select.css";
 
-function Select({ options = [] }) {
+function Select({ options = [], onChange }) {
   return (
-    <select className="option">
+    <select
+      className="option"
+      onChange={(event) => {
+        onChange(event.target.value);
+      }}
+    >
       {options.map((optionData) => (
         <option key={optionData.value} {...optionData} />
       ))}
