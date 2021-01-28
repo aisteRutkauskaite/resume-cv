@@ -7,8 +7,9 @@ import ListEducation from "./Components/ListEducation";
 import List from "./Components/List";
 import JobPosition from "./Components/JobPositionList";
 import Contacts from "./Components/Contacts";
-import translations from "./translations";
 import Divider from "./Components/Divider";
+import translations from "./translations";
+
 import { useState } from "react";
 
 function App() {
@@ -34,7 +35,7 @@ function App() {
       </header>
       <main>
         <section className="info_container">
-          <ContentBox title={translations.en.myLinks.title}>
+          <ContentBox title={translations[lang].myLinks.title}>
             {translations[lang].myLinks.links.map(({ text, link, image }) => (
               <Link link={link} image={image}>
                 {text}
@@ -82,7 +83,7 @@ function App() {
           <ContentBox title={translations[lang].workExpierence.title}>
             <div className="work_expierence">
               {translations[lang].workExpierence.expierence.map(
-                ({ position, companyName, workYears, list, index }) => (
+                ({ position, companyName, workYears, list }, index) => (
                   <JobPosition
                     jobPosition={position}
                     companyName={companyName}
@@ -103,11 +104,9 @@ function App() {
         </section>
       </main>
       <footer className="contact_container">
-        {translations[lang].contacts.info.map(({ title, list, index }) => (
-          <Contacts title={title}>
-            <>
-              <List key={index} li={list.map((children) => ({ children }))} />
-            </>
+        {translations[lang].contacts.info.map(({ title, list }, index) => (
+          <Contacts title={title} key={index}>
+            <List li={list.map((children) => ({ children }))} />
           </Contacts>
         ))}
       </footer>

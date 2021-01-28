@@ -1,7 +1,7 @@
 export default {
   en: {
     specialty: {
-      title: "Front-end developer",
+      title: "<Front-end developer>",
     },
     myLinks: {
       title: "LINKS",
@@ -12,13 +12,6 @@ export default {
             "https://www.linkedin.com/in/aist%C4%97-rutkauskait%C4%97-8953b8112/",
           image:
             "https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-linkedin-circle-512.png",
-        },
-        {
-          text: "twitter.com/in/aistė-rutkauskaitė-8953b8112",
-          link:
-            "https://www.linkedin.com/in/aist%C4%97-rutkauskait%C4%97-8953b8112/",
-          image:
-            "https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png",
         },
         {
           text: "github.com/aisteRutkauskaite",
@@ -57,14 +50,15 @@ export default {
         },
         {
           text: "Communication",
-          level: "yellow",
+          level: "green",
         },
         {
           text: "Organisation",
-          level: "yellow",
+          level: "green",
         },
         {
-          text: "Leadership",
+          text: "Responsibility",
+          level: "green",
         },
       ],
     },
@@ -87,6 +81,10 @@ export default {
           text: "PHP",
           level: "yellow",
         },
+        {
+          text: "React",
+          level: "yellow",
+        },
       ],
     },
     workExpierence: {
@@ -94,7 +92,7 @@ export default {
       expierence: [
         {
           position: "Furniture designer",
-          companyName: "Vildika",
+          companyName: "„Vildika“",
           workYears: "2017-2020",
           list: [
             ["*Design furnitures and space layout for offices."],
@@ -116,21 +114,22 @@ export default {
           ],
         },
         {
-          position: "Vizual information designer",
-          companyName: "„Kesko Senukai Lithuania“",
-          workYears: "2016-2017",
+          position: "Designer/ consultant",
+          companyName: "„Skandinaviški interjerai“",
+          workYears: "2016",
           list: [
-            ["*Supervise exposition of shopping center."],
-            ["*Make layouts and prints."],
-            ["*Combine materials."],
-            ["*Work with marketing team."],
+            [
+              "*Collaborate and communicate with customers to find best furniture options.",
+            ],
+            ["*Order products from suppliers."],
+            ["*Work with architects and designers."],
           ],
         },
       ],
     },
     contacts: {
       info: [
-        { title: "ADRESS", list: [["Kareivių str. 18"], ["Vilnius"]] },
+        { title: "ADRESS", list: [["Kareivių str."], ["Vilnius"]] },
         {
           title: "CONTACT",
           list: [
@@ -157,7 +156,7 @@ export default {
   },
   lt: {
     specialty: {
-      title: "Front-end programuotoja",
+      title: "<Front-end programuotoja>",
     },
     myLinks: {
       title: "NUORODOS",
@@ -169,13 +168,7 @@ export default {
           image:
             "https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-linkedin-circle-512.png",
         },
-        {
-          text: "twitter.com/in/aistė-rutkauskaitė-8953b8112",
-          link:
-            "https://www.linkedin.com/in/aist%C4%97-rutkauskait%C4%97-8953b8112/",
-          image:
-            "https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png",
-        },
+
         {
           text: "github.com/aisteRutkauskaite",
           link: "https://github.com/aisteRutkauskaite",
@@ -213,11 +206,15 @@ export default {
         },
         {
           text: "Komunikacija",
-          level: "yellow",
+          level: "green",
         },
         {
           text: "Organizuotumas",
-          level: "yellow",
+          level: "green",
+        },
+        {
+          text: "Atsakingumas",
+          level: "green",
         },
       ],
     },
@@ -238,6 +235,10 @@ export default {
         },
         {
           text: "PHP",
+          level: "yellow",
+        },
+        {
+          text: "React",
           level: "yellow",
         },
       ],
@@ -268,20 +269,20 @@ export default {
           ],
         },
         {
-          position: "Vizualines informacijos dizainerė",
-          companyName: "„Kesko Senukai Lithuania“",
-          workYears: "2016-2017",
+          position: "Dizanerė/ konsultantė",
+          companyName: "„Skandinaviški interjerai“",
+          workYears: "2016",
           list: [
-            ["Prižiūrėti ir atnaujinti prekybos centro ekspoziciją."],
-            ["*Maketuoti spauda."],
-            ["*Bendradarbiauti su marketingo komanda.."],
+            ["*Konsultuoti klientus baldų pasirinkimo klausimais."],
+            ["*Užsakinėti produktus iš tiekėjų."],
+            ["*Bendradarbiauti su architektais ir dizaineriais."],
           ],
         },
       ],
     },
     contacts: {
       info: [
-        { title: "ADRESAS", list: [["Kareivių g. 18"], ["Vilnius"]] },
+        { title: "ADRESAS", list: [["Kareivių g."], ["Vilnius"]] },
         {
           title: "KONTAKTAI",
           list: [

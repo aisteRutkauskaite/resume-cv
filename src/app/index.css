@@ -46,10 +46,11 @@
 
 .rectangle_3 {
   position: relative;
-  width: 300px;
+  width: 380px;
   height: 28px;
-  background-color: black;
-  text-align: center;
+  background-color: rgb(8, 6, 6);
+  display: flex;
+  justify-content: center;
 }
 
 .specialty {
@@ -61,7 +62,7 @@
   line-height: 28px;
   color: white;
   top: -24px;
-  left: 35px;
+  /* left: 35px; */
 }
 
 .info_container {
@@ -79,7 +80,7 @@
 }
 
 .skills_container {
-  margin-top: 80px;
+  margin-top: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 75px;
@@ -92,7 +93,7 @@
 }
 
 .work_expierence_container {
-  margin-top: 80px;
+  margin-top: 10px;
   text-align: left;
 }
 
@@ -112,7 +113,7 @@
 }
 
 .contact_container {
-  margin-top: 200px;
+  margin-top: 40px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 75px;
@@ -120,4 +121,10 @@
 
 li {
   list-style: none;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  height: 300px;
 }
