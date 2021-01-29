@@ -9,8 +9,7 @@ import JobPosition from "./Components/JobPositionList";
 import Contacts from "./Components/Contacts";
 import Divider from "./Components/Divider";
 import translations from "./translations";
-
-import { useState } from "react";
+import { Fragment, useState } from "react";
 
 function App() {
   const [lang, setLang] = useState("en");
@@ -36,11 +35,13 @@ function App() {
       <main>
         <section className="info_container">
           <ContentBox title={translations[lang].myLinks.title}>
-            {translations[lang].myLinks.links.map(({ text, link, image }) => (
-              <Link link={link} image={image}>
-                {text}
-              </Link>
-            ))}
+            {translations[lang].myLinks.links.map(
+              ({ text, link, image, index }) => (
+                <Link key={index} link={link} image={image}>
+                  {text}
+                </Link>
+              )
+            )}
           </ContentBox>
           <ContentBox title={translations[lang].aboutMe.title}>
             <p className="about_me_text">{translations[lang].aboutMe.text}</p>
@@ -51,7 +52,7 @@ function App() {
             <div className="education">
               {translations[lang].education.schools.map(
                 ({ school, years, degree }, index, array) => (
-                  <>
+                  <Fragment key={index}>
                     <ListEducation
                       school={school}
                       years={years}
@@ -59,22 +60,26 @@ function App() {
                     ></ListEducation>
 
                     {index !== array.length - 1 && <Divider isShort />}
-                  </>
+                  </Fragment>
                 )
               )}
             </div>
           </ContentBox>
           <ContentBox title={translations[lang].personallSkills.title}>
             {translations[lang].personallSkills.skills.map(
-              ({ text, level }) => (
-                <Pill color={level}>{text}</Pill>
+              ({ text, level, index }) => (
+                <Pill key={index} color={level}>
+                  {text}
+                </Pill>
               )
             )}
           </ContentBox>
           <ContentBox title={translations[lang].technicallSkills.title}>
             {translations[lang].technicallSkills.skills.map(
-              ({ text, level }) => (
-                <Pill color={level}>{text}</Pill>
+              ({ text, level, index }) => (
+                <Pill key={index} color={level}>
+                  {text}
+                </Pill>
               )
             )}
           </ContentBox>
@@ -85,15 +90,13 @@ function App() {
               {translations[lang].workExpierence.expierence.map(
                 ({ position, companyName, workYears, list }, index) => (
                   <JobPosition
+                    key={index}
                     jobPosition={position}
                     companyName={companyName}
                     years={workYears}
                   >
                     <>
-                      <List
-                        key={index}
-                        li={list.map((children) => ({ children }))}
-                      />
+                      <List li={list.map((children) => ({ children }))} />
                     </>
                   </JobPosition>
                 )
