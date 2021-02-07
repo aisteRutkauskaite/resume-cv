@@ -180,7 +180,7 @@ export default {
     aboutMe: {
       title: "APIE MANE",
       text:
-        "Aš esu atsakinga ir motyvuota dizainerė siekianti pakeisti savo karjeros kryptį į žiniatinklio programavimą. Prieš tai dirbau interjero dizaino srityje. Man patinka kūrybinis ir techniškas darbas, tačiau nemačiau perspektyvos būtent šiame karjeros kelyje. Mane visą laiką domino inovacijos, mokymasis ir tobulėjimas, todėl nusprendžiau pakreipti savo karjerą kita linkme, į dinamiškesnę ir globalesnę sritį.",
+        "Aš esu atsakinga ir motyvuota asmenybė siekianti pakeisti savo karjeros kryptį. Prieš tai dirbau interjero dizaino/projektavimo ir maketavimo srityse. Man patinka kūrybinis ir techniškas darbas,  domina inovacijos, mokymasis ir tobulėjimas, todėl  nusprendžiau pakreipti savo karjerą kita linkme ir ieškau darbo susijusio su front-end programavimu ir web dizainu.",
     },
     education: {
       title: "IŠSILAVINIMAS",
